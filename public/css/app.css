@@ -1,0 +1,58 @@
+.slide {
+    width: 100vw;
+    height: 85vh;
+    background-size: cover;
+}
+
+.slide h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+.slider-overlay {
+    width: inherit;
+    height: inherit;
+    background-color: rgba(0, 0, 0, 0.31);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text h1 {
+    font-size: 2.5em;
+    color: white;
+}
+
+.nav-buttons {
+    background: rgba(0, 0, 0, 0.51);
+    width: 30px;
+    height: 30px;
+    color: white;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100;
+    top: 58%;
+    cursor: pointer;
+}
+
+.prev-button {
+    left: 40px;
+}
+
+.next-button {
+    right: 40px;
+}
+
+.prev-button i {
+    position: relative;
+    right: 1px;
+}
+
+#role .notActive{
+    color: #3276b1;
+    background-color: #fff;
+}
+
