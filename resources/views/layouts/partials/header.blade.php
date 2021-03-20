@@ -43,10 +43,15 @@
                 <div class="container">
                     <nav>
                         <ul>
-                            <li ><a href="/">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href="/contact">Contact</a></li>
-                            <li><a href="/register">Register</a></li>
-                            <li><a href="/login">Login</a></li>
+                            @guest
+                                <li><a href="/register">Register</a></li>
+                                <li><a href="/login">Login</a></li>
+                            @endguest
+                            @auth
+                                <li><a href="/logout">Logout</a></li>
+                            @endauth
                         </ul>
                     </nav>
                 </div>

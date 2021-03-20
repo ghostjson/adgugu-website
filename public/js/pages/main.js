@@ -111,6 +111,10 @@ function changeRole(role){
     $('.role-btn').removeClass('active').addClass('notActive')
 
     roles.find(`#${role}-role`).addClass('active').removeClass('notActive')
+
+    setTimeout(()=> {
+        $('#role-input').val(role)
+    }, 100)
 }
 
 // End Register Page

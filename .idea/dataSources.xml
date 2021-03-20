@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="database.sqlite [2]" uuid="2ba438bd-fbca-4776-9416-ccaad03cc5a4">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:E:\workspace\workspace\freelance\sergo\sourcecode\adgugu-website\database\database.sqlite</jdbc-url>
+    </data-source>
+  </component>
+</project>
