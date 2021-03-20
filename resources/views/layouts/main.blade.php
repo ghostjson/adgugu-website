@@ -22,10 +22,10 @@
     <!-- Argon CSS -->
     <link rel="stylesheet" href="/assets/css/argon.css?v=1.2.0" type="text/css">
 
-    <script src="js/app.js"></script>
-    <link href="css/app.css" rel="stylesheet">
+    <script src="/js/app.js"></script>
+    <link href="/css/app.css" rel="stylesheet">
 
-    <link href="css/pages/main.css" rel="stylesheet">
+    <link href="/css/pages/main.css" rel="stylesheet">
 </head>
 
 <body>

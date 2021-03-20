@@ -50,6 +50,7 @@
                                 <li><a href="/login">Login</a></li>
                             @endguest
                             @auth
+                                <li><a href="/dashboard">Dashboard</a></li>
                                 <li><a href="/logout">Logout</a></li>
                             @endauth
                         </ul>
