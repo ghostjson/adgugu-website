@@ -228,9 +228,14 @@
 {{--        </div>--}}
         <ul class="sidebar-menu" style="margin-top: 20px">
             <li class="menu-header">General</li>
-            <li class="nav-item active">
-                <a href="{{ \Illuminate\Support\Facades\URL::route('dashboard') }}" class="nav-link">
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('advertiser/dashboard') ? 'active' : '' }}">
+                <a href="/advertiser/dashboard" class="nav-link">
                     <i class="fas fa-tachometer-alt"></i><span>Dashboard</span>
+                </a>
+            </li>
+            <li class="nav-item {{ \Illuminate\Support\Facades\Request::is('advertiser/campaign') ? 'active' : '' }}">
+                <a href="/advertiser/campaign" class="nav-link">
+                    <i class="fas fa-clipboard-list"></i><span>Ad Campaigns</span>
                 </a>
             </li>
 {{--            <li class="menu-header">Dashboard</li>--}}
@@ -241,6 +246,6 @@
 {{--                    <li class="active"><a class="nav-link" href="index.html">Ecommerce Dashboard</a></li>--}}
 {{--                </ul>--}}
 {{--            </li>--}}
-
+        </ul>
     </aside>
 </div>
