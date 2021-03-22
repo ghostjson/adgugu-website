@@ -1,0 +1,12 @@
+#new-campaign > .tab-section ~ .tab-section{
+    display: none;
+}
+
+
+#new-campaign > .tab-section > .tab-section ~ .tab-section{
+    display: none;
+}
+
+.service-tab-section > .tab-section ~ .tab-section{
+    display: none;
+}

@@ -15,7 +15,7 @@
                     <div class="card-header">
                         <h4>Campaigns</h4>
                         <div class="ml-auto">
-                            <a href="#" class="btn btn-primary text-white">New</a>
+                            <a href="/advertiser/campaign/new" class="btn btn-primary text-white">New</a>
                             <a href="#" class="btn btn-primary text-white " style="margin-left: 4px">Renew</a>
                         </div>
                     </div>

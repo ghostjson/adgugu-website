@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Ecommerce Dashboard &mdash; Stisla</title>
+    <title>Adgugu - Advertiser Dashboard</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"  data-turbolinks-track="reload">
@@ -15,12 +15,12 @@
     <link rel="stylesheet" href="/assets/admin/owl.carousel.min.css">
     <link rel="stylesheet" href="/assets/admin/owl.theme.default.min.css">
     <!-- Template CSS -->
-    <link rel="stylesheet" href="../assets/css/style.css" data-turbolinks-track="reload">
+    <link rel="stylesheet" href="/assets/css/style.css" data-turbolinks-track="reload">
 
 {{--    <link rel="stylesheet" href="../assets/css/components.css">--}}
     <script src="/js/app.js"></script>
 
-
+    <link rel="stylesheet" href="/css/pages/advertiser.css" data-turbolinks-track="reload">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         </div>
         <footer class="main-footer">
             <div class="footer-left">
-                Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+                Copyright &copy; 2018 <div class="bullet"></div> Adgugu</a>
             </div>
             <div class="footer-right">
                 2.3.0
@@ -54,7 +54,7 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"  data-turbolinks-track="reload"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="../assets/js/stisla.js"  data-turbolinks-track="reload"></script>
+<script src="/assets/js/stisla.js"  data-turbolinks-track="reload"></script>
 
 <!-- JS Libraies -->
 <script src="/assets/admin/jquery.sparkline.min.js"></script>
@@ -66,11 +66,11 @@
 <script src="/js/pages/advertiser.js"></script>
 
 <!-- Template JS File -->
-<script src="../assets/js/scripts.js" data-turbolinks-track="reload"></script>
-<script src="../assets/js/custom.js"></script>
+<script src="/assets/js/scripts.js" data-turbolinks-track="reload"></script>
+<script src="/assets/js/custom.js"></script>
 
 <!-- Page Specific JS File -->
-<script src="../assets/js/page/index.js"></script>
+<script src="/assets/js/page/index.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false"></script>
 
 
