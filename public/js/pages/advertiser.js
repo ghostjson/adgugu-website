@@ -6,20 +6,20 @@
 
 // New Campaign Form
 
-$('.tab-section-btn').click(function () {
-    let activate = $(this).attr('id')
-
-    $('#new-campaign > .tab-section').hide()
-    $(`.${activate}-section`).show()
-
-    if (activate === 'service-tab') {
-        $('#service-non-video-ad').click()
-    } else if (activate === 'product-tab') {
-        $('#non-video-ad').click()
-    }
-
-
-})
+// $('.tab-section-btn').click(function () {
+//     let activate = $(this).attr('id')
+//
+//     $('#new-campaign > .tab-section').hide()
+//     $(`.${activate}-section`).show()
+//
+//     if (activate === 'service-tab') {
+//         $('#service-non-video-ad').click()
+//     } else if (activate === 'product-tab') {
+//         $('#non-video-ad').click()
+//     }
+//
+//
+// })
 
 $('.tab-section-btn-2').click(function () {
     let activate = $(this).attr('id')
