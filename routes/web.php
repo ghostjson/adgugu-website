@@ -20,3 +20,5 @@ Route::get('/logout', [\App\Http\Controllers\AuthController::class, 'logout'])->
 Route::get('/advertiser/dashboard', \App\Http\Livewire\Advertiser\Dashboard::class)->name('advertiser.dashboard');
 Route::get('/advertiser/campaign', \App\Http\Livewire\Advertiser\Campaign::class)->name('advertiser.campaign.list');
 Route::get('/advertiser/campaign/new', \App\Http\Livewire\Advertiser\NewCampaign::class)->name('advertiser.campaign.new');
+Route::get('/advertiser/campaign/new/{campaign}/budget', \App\Http\Livewire\Advertiser\CampaignNewBudget::class)->name('advertiser.campaign.new.budget');
+Route::get('/advertiser/campaign/{campaign}/assign', \App\Http\Livewire\Advertiser\CampaignAssignPromoters::class)->name('advertiser.campaign.assign');

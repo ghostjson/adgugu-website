@@ -154,7 +154,9 @@ class NewCampaign extends Component
             'user_id' => auth()->id(),
         ]);
 
-        return redirect()->route('advertiser.campaign.list');
+        return redirect()->route('advertiser.campaign.new.budget', [
+            'campaign' => $c->id
+        ]);
     }
 
     public function updatedDiscount()
@@ -175,10 +177,6 @@ class NewCampaign extends Component
         $this->discountCouponCode = $res;
     }
 
-    public function updatedName()
-    {
-
-    }
 
     public function render()
     {

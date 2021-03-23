@@ -20,6 +20,17 @@ class CreateCampaignsTable extends Migration
             $table->string('campaign_id');
             $table->string('user_id');
 
+            $table->string('budget')->nullable();
+
+            $table->boolean('completed')->default(false);
+            $table->string('step')->default(0);
+
+            $table->date('start_date')->nullable();
+            $table->date('end_date')->nullable();
+
+            $table->string('permission')->nullable();
+            $table->integer('no_promoters')->nullable();
+
             $table->timestamps();
         });
     }

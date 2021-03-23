@@ -134,7 +134,7 @@
         </div>
 
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Next</button>
         </div>
     </div>
     <!-- End Non Video Ad -->
@@ -219,7 +219,7 @@
         </div>
 
         <div class="form-group">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Next</button>
         </div>
     </div>
     <!-- End Video Ad Section -->
@@ -275,7 +275,7 @@
         </div>
 
         <div class="form-group mt-6">
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <button type="submit" class="btn btn-primary">Next</button>
         </div>
     </div>
     <!-- End offline store -->
