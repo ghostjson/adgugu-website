@@ -18,17 +18,25 @@
                                     <label for="fun" class="col-sm-4 col-md-4 control-label text-right">Who are
                                         you?</label>
                                     <div class="col-sm-7 col-md-7">
-                                        <div class="input-group">
-                                            <div id="role" class="btn-group">
-                                                <a id="advertiser-role" class="btn btn-primary btn-sm role-btn "
-                                                   onclick="changeRole('advertiser')">Advertiser</a>
-                                                <a id="promoter-role" class="btn btn-primary btn-sm role-btn notActive"
-                                                   onclick="changeRole('promoter')">Promoter</a>
-                                                <a id="shopper-role" class="btn btn-primary btn-sm role-btn notActive"
-                                                   onclick="changeRole('shopper')">Shopper</a>
+                                        <div class="from-group">
+                                            <div class="form-check">
+                                                <input class="form-check-input " wire:model.defer="role" type="radio" name="role" id="advertiser-role" value="advertiser" checked>
+                                                <label class="form-check-label" for="advertiser-role">
+                                                    Advertiser
+                                                </label>
                                             </div>
-                                            <input type="hidden" wire:model.lazy="role" name="role"
-                                                   id="role-input" value="advertiser">
+                                            <div class="form-check">
+                                                <input class="form-check-input" wire:model.defer="role" type="radio" name="role" id="promoter-role" value="promoter">
+                                                <label class="form-check-label" for="promoter-role">
+                                                   Promoter
+                                                </label>
+                                            </div>
+                                            <div class="form-check">
+                                                <input class="form-check-input" wire:model.defer="role" type="radio" name="role" id="shopper-role" value="shopper">
+                                                <label class="form-check-label" for="shopper-role">
+                                                   Shopper
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

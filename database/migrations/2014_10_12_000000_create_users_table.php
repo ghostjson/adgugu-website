@@ -24,6 +24,9 @@ class CreateUsersTable extends Migration
             $table->string('last_name');
             $table->string('phone');
 
+            $table->text('bio')->nullable();
+            $table->json('interests')->nullable();
+
             $table->rememberToken();
             $table->timestamps();
         });

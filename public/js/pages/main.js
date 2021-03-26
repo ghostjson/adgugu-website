@@ -92,7 +92,6 @@ $(window).on('hashchange', roleAnalyser())
 function roleAnalyser(){
 
     const path_name = window.location.pathname
-    console.log('working')
     if (path_name === '/register'){
         console.log(path_name)
         let role = location.search.replace('?', '').split('=')[1]
@@ -104,6 +103,8 @@ function roleAnalyser(){
 
 
 function changeRole(role){
+
+
     if(role === undefined){
         role = 'advertiser'
     }
@@ -114,6 +115,8 @@ function changeRole(role){
 
     setTimeout(()=> {
         $('#role-input').val(role)
+        document.getElementById('role-input')
+            .dispatchEvent(new Event('input'))
     }, 100)
 }
 

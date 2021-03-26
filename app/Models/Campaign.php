@@ -22,7 +22,7 @@ class Campaign extends Model
 
     public function campaign()
     {
-       if ($this->campaign_type === 'non-video'){
+       if ($this->campaign_type === 'non_video'){
            return $this->belongsTo(CampaignOnlineNonVideoAd::class, 'campaign_id', 'id');
        }else if($this->campaign_type === 'video'){
            return $this->belongsTo(CampaignOnlineVideoAd::class, 'campaign_id', 'id');

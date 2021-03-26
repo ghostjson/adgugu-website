@@ -22,3 +22,8 @@ Route::get('/advertiser/campaign', \App\Http\Livewire\Advertiser\Campaign::class
 Route::get('/advertiser/campaign/new', \App\Http\Livewire\Advertiser\NewCampaign::class)->name('advertiser.campaign.new');
 Route::get('/advertiser/campaign/new/{campaign}/budget', \App\Http\Livewire\Advertiser\CampaignNewBudget::class)->name('advertiser.campaign.new.budget');
 Route::get('/advertiser/campaign/{campaign}/assign', \App\Http\Livewire\Advertiser\CampaignAssignPromoters::class)->name('advertiser.campaign.assign');
+
+
+// Promoter
+Route::get('/promoter/dashboard', \App\Http\Livewire\Promoter\Dashboard::class)->name('promoter.dashboard');
+Route::get('/promoter/profile', \App\Http\Livewire\Promoter\Profile::class)->name('promoter.profile');

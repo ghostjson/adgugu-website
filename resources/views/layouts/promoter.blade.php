@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no" name="viewport">
-    <title>Adgugu - Advertiser Dashboard</title>
+    <title>Adgugu - Promoter Dashboard</title>
 
     <!-- General CSS Files -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"  data-turbolinks-track="reload">
@@ -17,10 +17,13 @@
     <!-- Template CSS -->
     <link rel="stylesheet" href="/assets/css/style.css" data-turbolinks-track="reload">
 
-{{--    <link rel="stylesheet" href="../assets/css/components.css">--}}
+    <link rel="stylesheet" href="/assets/css/components.css">
     <script src="/js/app.js"></script>
 
     <link rel="stylesheet" href="/css/pages/advertiser.css" data-turbolinks-track="reload">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -31,7 +34,7 @@
 <div id="app">
     <div class="main-wrapper">
 
-        @include('layouts.partials.header_advertiser')
+        @include('layouts.partials.header_promoter')
 
         <!-- Main Content -->
         <div class="main-content">
@@ -72,6 +75,7 @@
 <!-- Page Specific JS File -->
 <script src="/assets/js/page/index.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/livewire/turbolinks@v0.1.x/dist/livewire-turbolinks.js" data-turbolinks-eval="false"></script>
+<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
 <script>
     $(document).on('turbolinks:load', function() {

@@ -11,7 +11,7 @@ class Register extends Component
 {
 
 
-    public $role = 'advertiser';
+    public $role;
     public $firstName = '';
     public $lastName = '';
     public $email = '';
@@ -22,10 +22,14 @@ class Register extends Component
 
     private $rolesAllowed = ['advertiser', 'promoter', 'shopper'];
 
+    public function mount()
+    {
+       $this->role = 'advertiser' ;
+    }
+
+
     public function register()
     {
-
-
         $this->validate([
             'role' => ['required'],
             'firstName' => ['required'],
