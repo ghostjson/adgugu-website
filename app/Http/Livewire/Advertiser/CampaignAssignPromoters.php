@@ -31,6 +31,14 @@ class CampaignAssignPromoters extends Component
         $this->campaign->save();
     }
 
+    public function done()
+    {
+       $this->campaign->step = 2;
+       $this->campaign->save();
+
+       return redirect()->route('advertiser.campaign.list');
+    }
+
     public function mount(\App\Models\Campaign $campaign)
     {
         $this->promoters = User::where('role', '=', 'promoter')->get();

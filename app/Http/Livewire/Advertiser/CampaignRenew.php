@@ -4,9 +4,9 @@ namespace App\Http\Livewire\Advertiser;
 
 use Livewire\Component;
 
-
-class Campaign extends Component
+class CampaignRenew extends Component
 {
+
     public $campaigns;
 
     public function activate($id)
@@ -30,8 +30,8 @@ class Campaign extends Component
     public function fetchCampaigns()
     {
         $this->campaigns = \App\Models\Campaign::where('user_id', '=', auth()->id())
-            ->where('status', '=', 'Active')
-            ->where('step', '=', 2)
+            ->where('status', '=', 'Stop')
+            ->where('step', '=', '2')
             ->get();
     }
 
@@ -42,6 +42,6 @@ class Campaign extends Component
 
     public function render()
     {
-        return view('livewire.advertiser.campaign')->layout('layouts.advertiser');
+        return view('livewire.advertiser.campaign-renew')->layout('layouts.advertiser');
     }
 }

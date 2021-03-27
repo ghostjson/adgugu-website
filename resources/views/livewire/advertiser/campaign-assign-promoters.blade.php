@@ -50,7 +50,7 @@
                             @endforeach
                         </ul>
                         <div class="row">
-                            <a href="{{ route('advertiser.campaign.list') }}" class="btn btn-primary ml-auto">Done</a>
+                            <a href="#" wire:click="done" class="btn btn-primary ml-auto">Done</a>
                         </div>
                     </div>
                 </div>

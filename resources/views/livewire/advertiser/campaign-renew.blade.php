@@ -6,18 +6,17 @@
 
     <div class="section-body">
         <h2 class="section-title">Ad Campaigns</h2>
-        <p class="section-lead">Here you can see current and completed campaigns.</p>
+        <p class="section-lead">Here you can see inactive and completed campaigns.</p>
 
         <div class="row">
 
             <div class="col-12 col-md-12 col-lg-12">
                 <div class="card">
                     <div class="card-header">
-                        <h4>Active Campaigns</h4>
+                        <h4>Inactive Campaigns</h4>
                         <div class="ml-auto">
-                            <a href="{{ route('advertiser.campaign.list') }}" class="btn btn-primary text-white">New</a>
-                            <a href="{{ route('advertiser.campaign.drafts') }}" class="btn btn-primary text-white">Drafts</a>
-                            <a href="{{ route('advertiser.campaign.renew') }}" class="btn btn-primary text-white " style="margin-left: 4px">Inactive</a>
+                            <a href="{{ route('advertiser.campaign.new') }}" class="btn btn-primary text-white">New</a>
+                            <a href="{{ route('advertiser.campaign.list') }}" class="btn btn-primary text-white " style="margin-left: 4px">Activate</a>
                         </div>
                     </div>
                     <div class="card-body p-0">

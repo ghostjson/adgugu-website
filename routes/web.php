@@ -23,6 +23,8 @@ Route::get('/advertiser/campaign/new', \App\Http\Livewire\Advertiser\NewCampaign
 Route::get('/advertiser/campaign/new/{campaign}/budget', \App\Http\Livewire\Advertiser\CampaignNewBudget::class)->name('advertiser.campaign.new.budget');
 Route::get('/advertiser/campaign/{campaign}/assign', \App\Http\Livewire\Advertiser\CampaignAssignPromoters::class)->name('advertiser.campaign.assign');
 
+Route::get('/advertiser/campaign/renew', \App\Http\Livewire\Advertiser\CampaignRenew::class)->name('advertiser.campaign.renew');
+Route::get('/advertiser/campaign/drafts', \App\Http\Livewire\Advertiser\CampaignDrafts::class)->name('advertiser.campaign.drafts');
 
 // Promoter
 Route::get('/promoter/dashboard', \App\Http\Livewire\Promoter\Dashboard::class)->name('promoter.dashboard');
