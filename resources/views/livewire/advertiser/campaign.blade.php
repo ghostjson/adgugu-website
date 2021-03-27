@@ -31,18 +31,33 @@
                                     <th>Status</th>
                                     <th>Deadline</th>
                                 </tr>
-                                <tr>
-                                    @foreach($campaigns as $campaign)
+                                @foreach($campaigns as $campaign)
+                                    <tr>
                                         <td>{{ $campaign->id }}</td>
                                         <td>{{ $campaign->campaign_type }}</td>
                                         <td>{{ $campaign->campaign->name }}</td>
-                                        <td>2017-01-09</td>
+                                        <td>{{ $campaign->budget }} USD</td>
                                         <td>
-                                            <div class="badge badge-success">Active</div>
+                                            @if($campaign->status == 'Active')
+                                                <div class="badge badge-success">{{ $campaign->status }}</div>
+                                            @elseif($campaign->status == 'Stop')
+                                                <div class="badge badge-danger">{{ $campaign->status }}</div>
+                                            @endif
                                         </td>
-                                        <td><a href="#" class="btn btn-secondary">Detail</a></td>
-                                    @endforeach
-                                </tr>
+                                        <td>
+                                            @if($campaign->status == 'Active')
+                                                <button wire:click="cancel({{$campaign->id}})"
+                                                        class="btn btn-sm btn-danger">Stop
+                                                </button>
+                                            @elseif($campaign->status == 'Stop')
+                                                <button wire:click="activate({{$campaign->id}})"
+                                                        class="btn btn-sm btn-success">Activate
+                                                </button>
+                                            @endif
+
+                                        </td>
+                                    </tr>
+                                @endforeach
 
                                 </tbody>
                             </table>

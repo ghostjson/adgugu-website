@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @method static create(array $array)
+ * @method static find($id)
  * @property mixed campaign_type
  * @property mixed budget
  * @property mixed start_date
@@ -20,19 +21,48 @@ class Campaign extends Model
 
     protected $guarded = [];
 
+    public function getPromotersAttribute($promoters): array
+    {
+        if ($promoters == null) {
+            return [];
+        }
+
+        return json_decode($promoters);
+    }
+
+    public function setPromotersAttribute($promoters): void
+    {
+        $this->attributes['promoters'] = json_encode($promoters);
+    }
+
+    public function isUserAlreadyApproved(User $user)
+    {
+        $approved = $this->promoters;
+        foreach ($approved as $approve) {
+            if ($approve == $user->id) {
+                return true;
+            }
+        }
+
+        return false;
+    }
+
     public function campaign()
     {
-       if ($this->campaign_type === 'non_video'){
-           return $this->belongsTo(CampaignOnlineNonVideoAd::class, 'campaign_id', 'id');
-       }else if($this->campaign_type === 'video'){
-           return $this->belongsTo(CampaignOnlineVideoAd::class, 'campaign_id', 'id');
-       }else if($this->campaign_type === 'offline'){
-          return $this->belongsTo(CampaignOfflineStoreAd::class, 'campaign_id', 'id');
-       }
+        if ($this->campaign_type === 'non_video') {
+            return $this->belongsTo(CampaignOnlineNonVideoAd::class, 'campaign_id', 'id');
+        } else if ($this->campaign_type === 'video') {
+            return $this->belongsTo(CampaignOnlineVideoAd::class, 'campaign_id', 'id');
+        } else if ($this->campaign_type === 'offline') {
+            return $this->belongsTo(CampaignOfflineStoreAd::class, 'campaign_id', 'id');
+        }
+
+        return $this->belongsTo(CampaignOnlineNonVideoAd::class, 'campaign_id', 'id');
+
     }
 
     public function user()
     {
-       return $this->belongsTo(User::class, 'user_id', 'id');
+        return $this->belongsTo(User::class, 'user_id', 'id');
     }
 }

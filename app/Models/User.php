@@ -39,6 +39,7 @@ use Illuminate\Notifications\Notifiable;
  * @method static \Illuminate\Database\Eloquent\Builder|User whereRole($value)
  * @method static \Illuminate\Database\Eloquent\Builder|User whereUpdatedAt($value)
  * @method static create(array $array)
+ * @method static where(string $string, string $string1, string $string2)
  * @mixin \Eloquent
  */
 class User extends Authenticatable
@@ -78,8 +79,13 @@ class User extends Authenticatable
         'email_verified_at' => 'datetime',
     ];
 
+    public function getInterestsAttribute($interests)
+    {
+       return json_decode($interests) ;
+    }
 
-    public function campaigns()
+
+    public function campaigns(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
        return $this->hasMany(Campaign::class);
     }
