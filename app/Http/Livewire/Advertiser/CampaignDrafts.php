@@ -14,9 +14,9 @@ class CampaignDrafts extends Component
         $c = \App\Models\Campaign::find($id);
 
         if($c->step == 0){
-            return redirect()->route('advertiser.campaign.new.budget', $id);
+            return redirect(env('APP_URL') . '/advertiser/campaign/new/'.$id.'/budget');
         }else if($c->step == 1){
-            return redirect()->route('advertiser.campaign.assign', $id);
+            return redirect(env('APP_URL') . '/advertiser/campaign/'.$id.'/assign');
         }
     }
 

@@ -154,9 +154,7 @@ class NewCampaign extends Component
             'user_id' => auth()->id(),
         ]);
 
-        return redirect()->route('advertiser.campaign.new.budget', [
-            'campaign' => $c->id
-        ]);
+        return redirect(env('APP_URL') . '/advertiser/campaign/new/'.$c->id.'/budget');
     }
 
     public function updatedDiscount()

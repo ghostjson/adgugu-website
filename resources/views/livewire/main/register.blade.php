@@ -3,37 +3,36 @@
 
         <div class="container">
 
-            <h2 class="m-b-60 text-center">Register</h2>
 
 
             <div class="row">
                 <div class="col-lg-8 center no-padding no-margin">
                     <form class="form-transparent-grey" wire:submit.prevent="register">
+                        <h1 class="m-b-60 ml-3">Register</h1>
                         @error('error')
                             <div class="alert alert-danger">{{ $message }}</div>
                         @enderror
                         <div class="row">
                             <div class="col-lg-12">
                                 <div class="form-group">
-                                    <label for="fun" class="col-sm-4 col-md-4 control-label text-right">Who are
-                                        you?</label>
+                                    <label for="fun" class="col-sm-4 col-md-4 control-label text-right" style="font-size: 1.3em">I want to be:</label>
                                     <div class="col-sm-7 col-md-7">
-                                        <div class="from-group">
+                                        <div class="from-group" >
                                             <div class="form-check">
                                                 <input class="form-check-input " wire:model.defer="role" type="radio" name="role" id="advertiser-role" value="advertiser" checked>
-                                                <label class="form-check-label" for="advertiser-role">
+                                                <label class="form-check-label" for="advertiser-role" style="font-size: 1.2em">
                                                     Advertiser
                                                 </label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" wire:model.defer="role" type="radio" name="role" id="promoter-role" value="promoter">
-                                                <label class="form-check-label" for="promoter-role">
+                                                <label class="form-check-label" for="promoter-role" style="font-size: 1.2em" >
                                                    Promoter
                                                 </label>
                                             </div>
                                             <div class="form-check">
                                                 <input class="form-check-input" wire:model.defer="role" type="radio" name="role" id="shopper-role" value="shopper">
-                                                <label class="form-check-label" for="shopper-role">
+                                                <label class="form-check-label" for="shopper-role"  style="font-size: 1.2em">
                                                    Shopper
                                                 </label>
                                             </div>

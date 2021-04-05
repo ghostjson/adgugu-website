@@ -9,11 +9,11 @@ class RouteManageController extends Controller
     public function dashboard()
     {
         if (auth()->user()->role === 'advertiser'){
-            return redirect()->route('advertiser.dashboard');
+            return redirect(env('app_url') . '/advertiser/dashboard');
         }else if(auth()->user()->role === 'promoter'){
-            return redirect()->route('promoter.dashboard');
+            return redirect(env('app_url') . '/advertiser/promoter');
         }else if(auth()->user()->role === 'shopper'){
-            return redirect()->route('shopper.dashboard');
+            return redirect(env('app_url') . '/advertiser/shopper');
         }
     }
 }

@@ -3,21 +3,21 @@
         <div class="slide" style="background-image:url('/images/home-slider/advertise1.jpg')">
             <div class="slider-overlay">
                 <div class="text">
-                    <h1>Advertise Your Products & Services as an Advertiser</h1>
+                    <h1>ADVERTISER posts Ad by sharing it with PROMOTERS</h1>
                 </div>
             </div>
         </div>
         <div class="slide" style="background-image:url('/images/home-slider/promoter1.jpg')">
             <div class="slider-overlay">
                 <div class="text">
-                    <h1>Earn Extra Income as a Promoter.</h1>
+                    <h1>PROMOTERS share Ad with Friends (SHOPPERS) &  Earn Money</h1>
                 </div>
             </div>
         </div>
         <div class="slide" style="background-image:url('/images/home-slider/shoppers1.jpg')">
             <div class="slider-overlay">
                 <div class="text">
-                    <h1>Enjoy Great Deals & Discounts as a Shopper.</h1>
+                    <h1>Friends (SHOPPERS) act on Ad, Earn & Save Money</h1>
                 </div>
             </div>
         </div>

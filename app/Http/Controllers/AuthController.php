@@ -13,7 +13,7 @@ class AuthController extends Controller
         } catch (\Exception $exception) {
             Log::error($exception);
         } finally {
-            return redirect()->route('home');
+            return redirect(env('APP_URL'). '/');
         }
     }
 }

@@ -24,7 +24,7 @@ class Login extends Component
             'email' => $this->email,
             'password' => $this->password
         ])) {
-            return redirect()->route('home');
+            return redirect(env('APP_URL') . '/');
         } else {
             $this->addError('error', 'Email or password incorrect');
         }

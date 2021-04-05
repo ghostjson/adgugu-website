@@ -57,7 +57,7 @@ class Register extends Component
             ]);
 
             Auth::login($user);
-            return redirect()->route('home');
+            return redirect(env('APP_URL'));
 
         } catch (\Exception $exception) {
             Log::error($exception);

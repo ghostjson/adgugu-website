@@ -50,3 +50,8 @@
 #mainMenu li a{
     line-height: 80px !important;
 }
+
+/*Home Page*/
+.heading-text h1, .heading-text ul li{
+    font-size: 1.3em !important;
+}

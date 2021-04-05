@@ -36,7 +36,7 @@ class CampaignAssignPromoters extends Component
        $this->campaign->step = 2;
        $this->campaign->save();
 
-       return redirect()->route('advertiser.campaign.list');
+       return redirect(env('APP_URL') . '/advertiser/campaign');
     }
 
     public function mount(\App\Models\Campaign $campaign)

@@ -41,6 +41,12 @@ $(document).ready(function () {
         homeSlider()
     })
 
+    //auto change
+    setInterval(function (){
+       current_slide < total_slides - 1 ? current_slide++ : current_slide = 0
+       homeSlider()
+    }, 5000)
+
 
 })
 

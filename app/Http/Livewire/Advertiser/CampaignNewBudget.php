@@ -33,9 +33,7 @@ class CampaignNewBudget extends Component
         $this->campaign->no_promoters = $this->noPromoters;
         $this->campaign->save();
 
-        return redirect()->route('advertiser.campaign.assign', [
-            'campaign' => $this->campaign->id
-        ]);
+        return redirect(env('APP_URL') . '/advertiser/campaign/'.$this->campaign->id.'/assign');
     }
 
     public function mount(\App\Models\Campaign $campaign)
