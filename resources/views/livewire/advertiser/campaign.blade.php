@@ -15,7 +15,7 @@
                     <div class="card-header">
                         <h4>Active Campaigns</h4>
                         <div class="ml-auto">
-                            <a href="{{ route('advertiser.campaign.list') }}" class="btn btn-primary text-white">New</a>
+                            <a href="{{ route('advertiser.campaign.new') }}" class="btn btn-primary text-white">New</a>
                             <a href="{{ route('advertiser.campaign.drafts') }}" class="btn btn-primary text-white">Drafts</a>
                             <a href="{{ route('advertiser.campaign.renew') }}" class="btn btn-primary text-white " style="margin-left: 4px">Inactive</a>
                         </div>
